@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Skinfy
+
+  Created by Algene Pulido on 9/28/20.
+  Copyright © 2020 Digiruu. All rights reserved.
+*/
+
+"finished" = "Finished";
+"expired" = "Expired";
+"group_name" = "Group Name";

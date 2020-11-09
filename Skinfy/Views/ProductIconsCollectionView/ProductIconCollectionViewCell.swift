@@ -1,0 +1,19 @@
+//
+//  ProductIconCollectionViewCell.swift
+//  Skinfy
+//
+//  Created by Algene Pulido on 9/30/20.
+//  Copyright © 2020 Digiruu. All rights reserved.
+//
+
+import UIKit
+
+class ProductIconCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var productIcon: ProductIconButton!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+}

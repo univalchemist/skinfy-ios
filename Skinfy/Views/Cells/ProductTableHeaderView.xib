@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductTableHeaderView" customModule="Skinfy" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLine" destination="0OO-AE-8Ep" id="loT-LF-75J"/>
+                <outlet property="btnAction" destination="JBG-HY-g3y" id="j9S-Ng-gz6"/>
+                <outlet property="imgIcon" destination="sDx-Qa-RBe" id="3vs-1P-SVv"/>
+                <outlet property="lblCount" destination="K9D-98-LR6" id="dRC-HU-4EW"/>
+                <outlet property="lblTitle" destination="UNr-C9-jnc" id="Ur9-rA-5Ux"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="Tgc-NP-rkZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_face_red" translatesAutoresizingMaskIntoConstraints="NO" id="sDx-Qa-RBe">
+                    <rect key="frame" x="11" y="9.5" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="AdJ-gr-ECq"/>
+                        <constraint firstAttribute="width" secondItem="sDx-Qa-RBe" secondAttribute="height" multiplier="1:1" id="LxP-M7-OUI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Face" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNr-C9-jnc">
+                    <rect key="frame" x="52" y="18.5" width="34.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                    <color key="textColor" red="0.22352941176470587" green="0.14901960784313725" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9D-98-LR6">
+                    <rect key="frame" x="90.5" y="18.5" width="20.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <color key="textColor" red="0.22352941176470587" green="0.14901960784313725" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBG-HY-g3y">
+                    <rect key="frame" x="15" y="0.0" width="332" height="56"/>
+                    <state key="normal" image="ic_plus_black"/>
+                </button>
+                <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OO-AE-8Ep">
+                    <rect key="frame" x="15" y="55" width="332" height="1"/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.85098039215686272" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ouh-OZ-61K"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="JBG-HY-g3y" firstAttribute="centerY" secondItem="K9D-98-LR6" secondAttribute="centerY" id="4Mg-gj-ylr"/>
+                <constraint firstAttribute="trailing" secondItem="0OO-AE-8Ep" secondAttribute="trailing" constant="15" id="5UV-Gg-D3o"/>
+                <constraint firstItem="JBG-HY-g3y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="7or-AS-T5v"/>
+                <constraint firstItem="K9D-98-LR6" firstAttribute="centerY" secondItem="UNr-C9-jnc" secondAttribute="centerY" id="8oo-6Q-jD4"/>
+                <constraint firstItem="sDx-Qa-RBe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FpV-Rq-6TU"/>
+                <constraint firstAttribute="bottom" secondItem="0OO-AE-8Ep" secondAttribute="bottom" id="GZZ-CS-tRl"/>
+                <constraint firstAttribute="trailing" secondItem="JBG-HY-g3y" secondAttribute="trailing" constant="15" id="NFB-ag-whJ"/>
+                <constraint firstItem="sDx-Qa-RBe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="S43-iV-Kuw"/>
+                <constraint firstItem="0OO-AE-8Ep" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SNp-Jd-Obs"/>
+                <constraint firstItem="JBG-HY-g3y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yy3-20-SX1"/>
+                <constraint firstItem="UNr-C9-jnc" firstAttribute="centerY" secondItem="sDx-Qa-RBe" secondAttribute="centerY" id="dWd-yr-NxT"/>
+                <constraint firstItem="0OO-AE-8Ep" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="hgc-wo-tZs"/>
+                <constraint firstItem="K9D-98-LR6" firstAttribute="leading" secondItem="UNr-C9-jnc" secondAttribute="trailing" constant="4" id="ktD-Mb-uDf"/>
+                <constraint firstItem="JBG-HY-g3y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="q21-Bx-1F2"/>
+                <constraint firstAttribute="bottom" secondItem="JBG-HY-g3y" secondAttribute="bottom" id="sjF-79-QDm"/>
+                <constraint firstItem="UNr-C9-jnc" firstAttribute="leading" secondItem="sDx-Qa-RBe" secondAttribute="trailing" constant="4" id="wDY-IB-Wwf"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="4" y="48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_face_red" width="37" height="37"/>
+        <image name="ic_plus_black" width="14" height="14"/>
+    </resources>
+</document>

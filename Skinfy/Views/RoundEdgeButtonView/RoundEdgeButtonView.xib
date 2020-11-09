@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSans-900.ttf">
+            <string>MuseoSans-900</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundEdgeButtonView" customModule="Skinfy" customModuleProvider="target">
+            <connections>
+                <outlet property="centerLabelConstraint" destination="2hX-ea-gxP" id="eZ1-7z-yoA"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="vfH-vh-VmC"/>
+                <outlet property="imgLeftIcon" destination="zuG-7U-wBO" id="KAQ-pA-Hwq"/>
+                <outlet property="imgRightIcon" destination="kec-ux-boL" id="hcK-6U-88U"/>
+                <outlet property="lblText" destination="Doi-b9-y0H" id="Qkp-UQ-Bk4"/>
+                <outlet property="leftImageHeight" destination="Gjx-Uc-lK9" id="B4A-aG-wqy"/>
+                <outlet property="leftImageWidth" destination="Oqd-P1-xFM" id="s0p-J2-kXy"/>
+                <outlet property="rightImageHeight" destination="3TP-wc-WpL" id="6PW-Ru-mBI"/>
+                <outlet property="rightImageWidth" destination="UbW-Wo-uQp" id="4fk-Jq-zEV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="59"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-Sw-ciV">
+                    <rect key="frame" x="104.5" y="0.0" width="122.5" height="59"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zuG-7U-wBO">
+                            <rect key="frame" x="0.0" y="19.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Gjx-Uc-lK9"/>
+                                <constraint firstAttribute="width" constant="20" id="Oqd-P1-xFM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doi-b9-y0H">
+                            <rect key="frame" x="40" y="22.5" width="42.5" height="16"/>
+                            <fontDescription key="fontDescription" name="MuseoSans-900" family="MuseoSans-900" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kec-ux-boL">
+                            <rect key="frame" x="102.5" y="19.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="3TP-wc-WpL"/>
+                                <constraint firstAttribute="width" constant="20" id="UbW-Wo-uQp"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="kec-ux-boL" firstAttribute="leading" secondItem="Doi-b9-y0H" secondAttribute="trailing" constant="20" id="JYG-nu-220"/>
+                        <constraint firstItem="Doi-b9-y0H" firstAttribute="centerY" secondItem="Nv3-Sw-ciV" secondAttribute="centerY" constant="1" id="Ng8-uB-6sO"/>
+                        <constraint firstItem="zuG-7U-wBO" firstAttribute="leading" secondItem="Nv3-Sw-ciV" secondAttribute="leading" id="doH-TK-X00"/>
+                        <constraint firstItem="Doi-b9-y0H" firstAttribute="centerX" secondItem="Nv3-Sw-ciV" secondAttribute="centerX" id="eeK-pm-Jjb"/>
+                        <constraint firstItem="zuG-7U-wBO" firstAttribute="centerY" secondItem="Doi-b9-y0H" secondAttribute="centerY" constant="-1" id="kZD-jM-NU2"/>
+                        <constraint firstItem="kec-ux-boL" firstAttribute="centerY" secondItem="Doi-b9-y0H" secondAttribute="centerY" constant="-1" id="mLo-rn-voQ"/>
+                        <constraint firstAttribute="trailing" secondItem="kec-ux-boL" secondAttribute="trailing" id="oNP-26-xM3"/>
+                        <constraint firstItem="Doi-b9-y0H" firstAttribute="leading" secondItem="zuG-7U-wBO" secondAttribute="trailing" constant="20" id="uAF-aK-4oH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Nv3-Sw-ciV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2hX-ea-gxP"/>
+                <constraint firstAttribute="top" secondItem="Nv3-Sw-ciV" secondAttribute="top" id="nrO-M8-76H"/>
+                <constraint firstAttribute="bottom" secondItem="Nv3-Sw-ciV" secondAttribute="bottom" id="zqP-Gu-Cjv"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="151.44927536231884" y="91.40625"/>
+        </view>
+    </objects>
+</document>

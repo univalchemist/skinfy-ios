@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16097.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProductButtonsView" customModule="Skinfy" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBody" destination="QXk-wL-M2n" id="KIX-BJ-dBq"/>
+                <outlet property="btnClose" destination="BHv-Nd-Bma" id="Wrv-Ay-7sf"/>
+                <outlet property="btnFace" destination="r25-YL-5Nt" id="NOE-WN-F3o"/>
+                <outlet property="btnFaceY" destination="DpE-X5-VfB" id="pSR-KZ-gc2"/>
+                <outlet property="btnHair" destination="0cg-Np-BI2" id="vsQ-gC-DCR"/>
+                <outlet property="btnOral" destination="hcl-a3-DSU" id="crk-EY-2gX"/>
+                <outlet property="btnOther" destination="pWl-hq-L07" id="N8L-Jt-tsB"/>
+                <outlet property="closeButtonBottom" destination="Okv-yz-6nO" id="xnO-1t-P2Y"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="v6c-sG-agt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r25-YL-5Nt" customClass="CircledButtonIcon" customModule="Skinfy" customModuleProvider="target">
+                    <rect key="frame" x="62" y="827.5" width="60" height="77"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="EkF-Yc-BXl"/>
+                        <constraint firstAttribute="width" constant="60" id="n11-54-b2j"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ic_face_big"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Face"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHv-Nd-Bma" customClass="CircledCloseButton" customModule="Skinfy" customModuleProvider="target">
+                    <rect key="frame" x="177" y="828" width="60" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3os-iT-HK8"/>
+                        <constraint firstAttribute="width" constant="60" id="PTB-lU-SOq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXk-wL-M2n" customClass="CircledButtonIcon" customModule="Skinfy" customModuleProvider="target">
+                    <rect key="frame" x="97" y="742" width="60" height="77"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="8bv-lU-egJ"/>
+                        <constraint firstAttribute="width" constant="60" id="ZgA-WA-XWH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ic_body_big"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Body"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cg-Np-BI2" customClass="CircledButtonIcon" customModule="Skinfy" customModuleProvider="target">
+                    <rect key="frame" x="177" y="707" width="60" height="77"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="Led-S8-fTk"/>
+                        <constraint firstAttribute="width" constant="60" id="QIs-N8-od9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ic_hair_big"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Hair"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-a3-DSU" customClass="CircledButtonIcon" customModule="Skinfy" customModuleProvider="target">
+                    <rect key="frame" x="257" y="742" width="60" height="77"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="igf-Dr-hFW"/>
+                        <constraint firstAttribute="height" constant="77" id="qMB-xu-bNF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ic_oral_big"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Oral"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWl-hq-L07" customClass="CircledButtonIcon" customModule="Skinfy" customModuleProvider="target">
+                    <rect key="frame" x="292" y="827.5" width="60" height="77"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="7e2-ek-Bca"/>
+                        <constraint firstAttribute="width" constant="60" id="Zfw-Rs-3Lc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ic_other_big"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Other"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1764705882352941" green="0.25882352941176467" blue="0.4823529411764706" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QXk-wL-M2n" firstAttribute="top" secondItem="0cg-Np-BI2" secondAttribute="bottom" constant="-42" id="0bD-eY-wPJ"/>
+                <constraint firstItem="pWl-hq-L07" firstAttribute="centerY" secondItem="r25-YL-5Nt" secondAttribute="centerY" id="7dy-Sm-aax"/>
+                <constraint firstItem="0cg-Np-BI2" firstAttribute="centerX" secondItem="BHv-Nd-Bma" secondAttribute="centerX" id="DAn-tL-qzf"/>
+                <constraint firstItem="r25-YL-5Nt" firstAttribute="centerY" secondItem="BHv-Nd-Bma" secondAttribute="centerY" constant="8" id="DpE-X5-VfB"/>
+                <constraint firstItem="r25-YL-5Nt" firstAttribute="top" secondItem="QXk-wL-M2n" secondAttribute="bottom" constant="8.5" id="Dz6-ZY-haI"/>
+                <constraint firstItem="0cg-Np-BI2" firstAttribute="leading" secondItem="QXk-wL-M2n" secondAttribute="trailing" constant="20" id="KEn-wq-JvM"/>
+                <constraint firstItem="BHv-Nd-Bma" firstAttribute="leading" secondItem="r25-YL-5Nt" secondAttribute="trailing" constant="55" id="MVN-pg-D74"/>
+                <constraint firstItem="hcl-a3-DSU" firstAttribute="centerY" secondItem="QXk-wL-M2n" secondAttribute="centerY" id="NjR-mU-9kX"/>
+                <constraint firstAttribute="bottom" secondItem="BHv-Nd-Bma" secondAttribute="bottom" constant="8" id="Okv-yz-6nO"/>
+                <constraint firstItem="pWl-hq-L07" firstAttribute="leading" secondItem="hcl-a3-DSU" secondAttribute="trailing" constant="-25" id="P24-fp-Plw"/>
+                <constraint firstItem="QXk-wL-M2n" firstAttribute="leading" secondItem="r25-YL-5Nt" secondAttribute="trailing" constant="-25" id="d4g-Eo-roM"/>
+                <constraint firstItem="BHv-Nd-Bma" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="glB-fU-CgD"/>
+                <constraint firstItem="hcl-a3-DSU" firstAttribute="leading" secondItem="0cg-Np-BI2" secondAttribute="trailing" constant="20" id="zRZ-wr-A2G"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSans-700.ttf">
+            <string>MuseoSans-700</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicTextField" customModule="Skinfy" customModuleProvider="target">
+            <connections>
+                <outlet property="btnRight" destination="x15-Zx-c1k" id="OB6-5b-7Jh"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="wo2-bW-TpP"/>
+                <outlet property="imgLeft" destination="ugU-es-aFa" id="z9I-qh-9x6"/>
+                <outlet property="lblLabel" destination="w6y-Re-0ez" id="uD0-yd-fkQ"/>
+                <outlet property="textLeading" destination="haU-rh-r74" id="xue-bP-hAA"/>
+                <outlet property="txtText" destination="EeX-zk-OYY" id="2qM-pS-ODA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6y-Re-0ez">
+                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="11"/>
+                    <fontDescription key="fontDescription" name="MuseoSans-700" family="MuseoSans-700" pointSize="11"/>
+                    <color key="textColor" red="0.32156862745098036" green="0.69019607843137254" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-es-aFa">
+                    <rect key="frame" x="0.0" y="19" width="21" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="F1B-XW-l8R"/>
+                        <constraint firstAttribute="width" secondItem="ugU-es-aFa" secondAttribute="height" multiplier="1:1" id="qad-mG-tad"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeX-zk-OYY">
+                    <rect key="frame" x="29" y="19.5" width="359" height="20"/>
+                    <color key="textColor" red="0.22352941176470587" green="0.14901960784313725" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbB-Ag-urf">
+                    <rect key="frame" x="0.0" y="45" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.85098039215686272" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Xii-15-GHs"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x15-Zx-c1k">
+                    <rect key="frame" x="396" y="20.5" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="x15-Zx-c1k" secondAttribute="height" multiplier="1:1" id="ZUF-Tr-oAP"/>
+                        <constraint firstAttribute="width" constant="18" id="h2s-Ja-GIW"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="x15-Zx-c1k" firstAttribute="leading" secondItem="EeX-zk-OYY" secondAttribute="trailing" constant="8" id="0dQ-ny-qYl"/>
+                <constraint firstItem="w6y-Re-0ez" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5jr-ec-hSE"/>
+                <constraint firstAttribute="trailing" secondItem="KbB-Ag-urf" secondAttribute="trailing" id="7UU-GR-luZ"/>
+                <constraint firstItem="KbB-Ag-urf" firstAttribute="top" secondItem="EeX-zk-OYY" secondAttribute="bottom" constant="5.5" id="GMy-fT-R1w"/>
+                <constraint firstItem="KbB-Ag-urf" firstAttribute="top" secondItem="ugU-es-aFa" secondAttribute="bottom" constant="5" id="JRk-jx-6wC"/>
+                <constraint firstItem="w6y-Re-0ez" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KNy-B7-tn1"/>
+                <constraint firstItem="x15-Zx-c1k" firstAttribute="centerY" secondItem="EeX-zk-OYY" secondAttribute="centerY" id="M2F-Ke-wu8"/>
+                <constraint firstItem="EeX-zk-OYY" firstAttribute="leading" secondItem="ugU-es-aFa" secondAttribute="trailing" constant="8" id="ROF-tJ-GnM"/>
+                <constraint firstAttribute="trailing" secondItem="x15-Zx-c1k" secondAttribute="trailing" id="Rzg-rj-x3d"/>
+                <constraint firstItem="EeX-zk-OYY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="haU-rh-r74"/>
+                <constraint firstItem="EeX-zk-OYY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19.5" id="hmP-iJ-cOC"/>
+                <constraint firstItem="EeX-zk-OYY" firstAttribute="centerY" secondItem="ugU-es-aFa" secondAttribute="centerY" id="nxn-CU-N94"/>
+                <constraint firstItem="KbB-Ag-urf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s51-Jt-KPX"/>
+                <constraint firstItem="ugU-es-aFa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vqD-PD-IsS"/>
+                <constraint firstItem="ugU-es-aFa" firstAttribute="top" secondItem="w6y-Re-0ez" secondAttribute="bottom" constant="8" id="zb7-IN-yAI"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="111.59420289855073" y="85.714285714285708"/>
+        </view>
+    </objects>
+</document>
